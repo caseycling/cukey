@@ -1,3 +1,4 @@
+Feature: Search enginge's search bar
 Scenario Outline: Steps will run conditionally if tagged
   
   When user visits <site>

@@ -8,7 +8,7 @@ When("user visits google.com", () => {
   cy.visit("https://www.google.com");
 });
 
-Then("google.com search bar will display", () => {
+Then("duckduckgo.com search bar will display", () => {
   cy.get("input").should(
     "have.attr",
     "placeholder",
@@ -16,10 +16,8 @@ Then("google.com search bar will display", () => {
   );
 });
 
-Then("duckduckgo.com search bar will display", () => {
-  cy.get("input").should(
-    "have.attr",
-    "placeholder",
-    "Search the web without being tracked"
+Then("google.com search bar will display", () => {
+  cy.get('input').should(
+    "have.class", "gLFyf"
   );
 });
